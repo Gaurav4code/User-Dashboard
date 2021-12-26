@@ -1,10 +1,11 @@
 import "./styles.css";
-import { Menu } from "./components/Sidebar/Menu/Menu";
+
+import { Sidebar } from "./components/Sidebar/Sidebar";
 export default function App() {
   return (
     <>
       <div>
-        <Menu />
+        <Sidebar />
       </div>
     </>
   );

@@ -1,20 +1,18 @@
 import styled from "styled-components";
-
+import dash from "../Menu/dash.png";
 import React from "react";
-import { MenuLink } from "./MenuLink";
+import MenuLink from "../Menu/MenuLink";
 const Container = styled.div`
+  border: solid red 2px;
   width: 100%;
+  margin-top: 40px;
 `;
-const Menu = () => {
+export const Menu = () => {
   return (
     <Container>
-      <MenuLink title="Home" icon={"home"} />
-      <MenuLink title="Deposits" icon={"file-multiple"} active />
-      <MenuLink title="Offers" icon={"gift"} />
-      <MenuLink title="Payments" icon={"bank"} />
-      <MenuLink title="Settings" icon={"cog"} />
+      <MenuLink title="Dashboard" icon={dash} />
+      <MenuLink title="Community" icon={dash} />
+      <MenuLink title="SignOut" icon={dash} />
     </Container>
   );
 };
-
-export default Menu;
