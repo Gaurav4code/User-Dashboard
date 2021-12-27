@@ -5,7 +5,7 @@ import { Profile } from "./Profile";
 import { Newpost } from "./Newpost";
 
 const Container = styled.div`
-  width: 238px;
+  width: 290px;
   height: 700px;
   margin-left: 0px;
   margin-top: 0px;

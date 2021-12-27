@@ -1,13 +1,13 @@
 import "./styles.css";
 
 import { Sidebar } from "./components/Sidebar/Sidebar";
-import { Navbar } from "./components/Main/Navbar";
+
+import { Dashboard } from "./containers/Dashboard";
 export default function App() {
   return (
     <>
       <div>
-        <Sidebar />
-        <Navbar />
+        <Dashboard />
       </div>
     </>
   );

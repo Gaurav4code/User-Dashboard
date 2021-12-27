@@ -4,7 +4,7 @@ const Container = styled.div`
   width: 140px;
   height: 64px;
   margin-left: 46px;
-  margin-top: 81px;
+  margin-top: 28px;
   border: solid red 2px;
   display: flex;
   background: rgba(255, 255, 255, 0.1);
@@ -27,6 +27,7 @@ const Text = styled.h1`
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
+  color: white;
 `;
 const Box = styled.div`
   display: flex;

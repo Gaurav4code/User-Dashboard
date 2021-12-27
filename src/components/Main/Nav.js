@@ -1,10 +1,16 @@
 import styled from "styled-components";
-import Input from "./Input";
 import search from "../Main/Search.png";
+
 const Container = styled.div`
-  width: 500px;
+  width: 900px;
+  margin-left: 2.5rem;
+
   border: solid red 1px;
   display: flex;
+  padding: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 3rem;
 `;
 const StyledInput = styled.input`
   width: 80%;
@@ -35,7 +41,7 @@ const Icon = styled.img`
   width: 20px;
   margin: 20px 120px;
 `;
-export const Navbar = () => {
+const Nav = () => {
   return (
     <Container>
       <StyledInput type="text " placeholder="Search" />
@@ -43,3 +49,4 @@ export const Navbar = () => {
     </Container>
   );
 };
+export default Nav;

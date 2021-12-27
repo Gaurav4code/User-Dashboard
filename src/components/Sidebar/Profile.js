@@ -5,7 +5,7 @@ const Container = styled.div`
   display: grid;
   width: 30%;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 128px;
+  margin-top: 148px;
   margin-left: 35px;
 `;
 const Text = styled.h1`
