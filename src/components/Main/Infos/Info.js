@@ -3,31 +3,36 @@ import img1 from "./Union1.png";
 import img2 from "./Union2.png";
 import img3 from "./Union3.png";
 const ContainerBlue = styled.div`
-  height: 15rem;
-  width: 12rem;
-  margin-right: 60px;
-  margin-top: 13px;
+  height: 157px;
+  width: 141px;
+  left: 287px;
+  top: 163px;
   border-radius: 20px;
+  margin-right: 35px;
   background: rgba(73, 142, 247, 0.1);
 `;
 const ContainerRed = styled.div`
-  height: 15rem;
-  width: 12rem;
-  margin-right: 60px;
-  margin-top: 13px;
+  height: 157px;
+  width: 141px;
+  left: 287px;
+  top: 163px;
+  margin-right: 35px;
   border-radius: 20px;
   background: #fff6f6;
 `;
 const ContainerGreen = styled.div`
-  height: 15rem;
-  width: 12rem;
-  margin-right: 60px;
-  margin-top: 13px;
+  height: 157px;
+  width: 141px;
+  left: 287px;
+  top: 163px;
   border-radius: 20px;
+  margin-right: 35px;
   background: #eefdf3;
 `;
 const Icon = styled.img`
-  padding: 50px 60px;
+  padding-top: 29px;
+  padding-right: 49px;
+  padding-left: 49px;
 `;
 const Text = styled.h1`
   font-family: DM Sans;

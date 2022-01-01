@@ -29,6 +29,7 @@ const Explore = styled(Text)`
 const Cards = styled.div`
   border: solid red 2px;
   display: flex;
+  width: 506px;
 `;
 const Options = styled.div`
   display: flex;

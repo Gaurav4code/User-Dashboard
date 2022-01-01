@@ -13,21 +13,16 @@ const Container = styled.div`
   align-items: center;
   margin-bottom: 1rem;
   transition: 0.2s all ease-in-out;
-
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
 `;
 
 const Span = styled.div`
   font-size: 1rem;
-  /* color: ${(props) => !props.active && props.theme.textColor}; */
+  color: ${(props) => !props.active && props.theme.textColor};
   margin-right: 1rem;
-
 `;
 
 const Title = styled.h1`
-  color: ${(props) => (props.active ? props.theme.activeMenu : "#5163C8")};
+  color: ${(props) => (props.active ? "#ffffff" : "#5163C8")};
   font-family: DM Sans;
   font-size: 14px;
   font-style: normal;
@@ -35,17 +30,20 @@ const Title = styled.h1`
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
+   /* color: ${(props) =>
+     props.active ? props.theme.activeMenu : "#5163C8"}; */
 `;
 
+/* color: ${(props) => (props.active ? props.theme.activeMenu : "#5163C8")}; */
+
+const Icon = styled.img`
+  margin-right: 15px;
+  color: ${(props) => (props.active ? "#5163C8" : "#ffffff")};
+`;
 const MenuLink = ({ title, active, icon }) => {
   return (
     <Container active={active}>
-      <Span
-        active={active}
-        className="iconify"
-        data-inline="false"
-        data-icon={"mdi-light:${icon}"}
-      ></Span>
+      <Icon src={icon} active={active} />
       <Title active={active}> {title}</Title>
     </Container>
   );

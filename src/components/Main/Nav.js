@@ -2,7 +2,7 @@ import styled from "styled-components";
 import search from "../Main/Search.png";
 
 const Container = styled.div`
-  width: 900px;
+  width: 510px;
   margin-left: 2.5rem;
 
   border: solid red 1px;
