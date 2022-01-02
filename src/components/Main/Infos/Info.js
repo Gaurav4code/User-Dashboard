@@ -2,6 +2,36 @@ import styled from "styled-components";
 import img1 from "./Union1.png";
 import img2 from "./Union2.png";
 import img3 from "./Union3.png";
+
+export const BlueCard = (props) => {
+  return (
+    <ContainerBlue>
+      <Icon src={img1} />
+      <Text>Reports</Text>
+      <SubText>5 Pending</SubText>
+    </ContainerBlue>
+  );
+};
+
+export const GreenCard = (props) => {
+  return (
+    <ContainerGreen>
+      <Icon src={img2} />
+      <Text>My Posts</Text>
+      <SubText>8 new likes</SubText>
+    </ContainerGreen>
+  );
+};
+
+export const RedCard = (props) => {
+  return (
+    <ContainerRed>
+      <Icon src={img3} />
+      <Text>Find Patients</Text>
+      <SubText>1859 members</SubText>
+    </ContainerRed>
+  );
+};
 const ContainerBlue = styled.div`
   height: 157px;
   width: 141px;
@@ -53,32 +83,3 @@ const SubText = styled.h3`
   text-align: center;
   color: #8e8e8e;
 `;
-export const BlueCard = (props) => {
-  return (
-    <ContainerBlue>
-      <Icon src={img1} />
-      <Text>Reports</Text>
-      <SubText>5 Pending</SubText>
-    </ContainerBlue>
-  );
-};
-
-export const GreenCard = (props) => {
-  return (
-    <ContainerGreen>
-      <Icon src={img2} />
-      <Text>My Posts</Text>
-      <SubText>8 new likes</SubText>
-    </ContainerGreen>
-  );
-};
-
-export const RedCard = (props) => {
-  return (
-    <ContainerRed>
-      <Icon src={img3} />
-      <Text>Find Patients</Text>
-      <SubText>1859 members</SubText>
-    </ContainerRed>
-  );
-};

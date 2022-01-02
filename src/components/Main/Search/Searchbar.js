@@ -12,9 +12,8 @@ export const SearchBar = () => {
 
 const Container = styled.div`
   width: 510px;
-  margin-left: 2.5rem;
+  margin-left: 0.7rem;
 
-  border: solid red 1px;
   display: flex;
   padding: 1rem;
   justify-content: flex-start;
@@ -22,7 +21,7 @@ const Container = styled.div`
   margin-bottom: 3rem;
 `;
 const StyledInput = styled.input`
-  width: 80%;
+  width: 90%;
   font-family: DM sans;
   font-size: 16px;
   max-width: 650px;
@@ -48,5 +47,5 @@ const StyledInput = styled.input`
 const Icon = styled.img`
   height: 20px;
   width: 20px;
-  margin: 20px 120px;
+  margin: 20px 180px;
 `;

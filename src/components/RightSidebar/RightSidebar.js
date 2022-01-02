@@ -20,7 +20,7 @@ export const Profile = () => {
 };
 export const Case = () => {
   return (
-    <ProfileContainer>
+    <ManuscriptContainer>
       <Wrapper>
         <Icon src={book} />
 
@@ -30,7 +30,7 @@ export const Case = () => {
         </ProfileData>
       </Wrapper>
       <img src={chevron} />
-    </ProfileContainer>
+    </ManuscriptContainer>
   );
 };
 export const RightSidebar = () => {
@@ -47,10 +47,10 @@ export const RightSidebar = () => {
       </Trending>
       <Manuscript>
         <Heading>Manuscripts</Heading>
-        <Latest>
+        <LatestCase>
           <Case />
           <Case />
-        </Latest>
+        </LatestCase>
       </Manuscript>
     </Container>
   );
@@ -62,7 +62,6 @@ const Container = styled.div`
   left: 830px;
   top: 0px;
   border-radius: 0px;
-  border: red 1px solid;
 `;
 const Icon = styled.img`
   height: 30px;
@@ -83,24 +82,24 @@ const Trending = styled.div`
   margin-left: 33px;
 `;
 const Heading = styled(Text)``;
-const Latest = styled.div``;
+const Latest = styled.div`
+  margin-top: 30px;
+`;
 const Manuscript = styled.div`
   margin-top: 38px;
   margin-left: 33px;
 `;
 
 const Bell = styled.img`
-  margin-top: 50px;
+  margin-top: 30px;
   margin-left: 230px;
 `;
 const ProfileContainer = styled.div`
   display: flex;
-  /* display: grid; */
+
   margin-top: 30px;
   justify-content: space-between;
-  /* width: 134px;
-  grid-template-columns: repeat(3, 1fr); */
-  border: solid red 1px;
+
   height: 42px;
   width: 243.22579956054688px;
 `;
@@ -116,7 +115,7 @@ const ProfileData = styled.div`
   flex-direction: column;
 
   color: white;
-  border: solid 1px yellow;
+
   display: flex;
 `;
 const Wrapper = styled.div`
@@ -144,7 +143,14 @@ const Designation = styled(TextProfile)`
   letter-spacing: 0em;
   text-align: left;
 `;
-
+const ManuscriptContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+`;
+const LatestCase = styled.div`
+  margin-top: 100px;
+`;
 const Problem = styled(TextProfile)`
   font-family: DM Sans;
   font-size: 16px;

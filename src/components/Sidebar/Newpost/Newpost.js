@@ -1,11 +1,26 @@
 import styled from "styled-components";
 import vector from "./Vector.png";
+
+export const Newpost = () => {
+  return (
+    <Container>
+      <Box>
+        <Icon img src={vector} />
+
+        <Text>
+          Create <br />
+          new post
+        </Text>
+      </Box>
+    </Container>
+  );
+};
 const Container = styled.div`
   width: 140px;
   height: 64px;
-  margin-left: 46px;
+  margin-left: 40px;
   margin-top: 28px;
-  border: solid red 2px;
+
   display: flex;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
@@ -32,17 +47,3 @@ const Text = styled.h1`
 const Box = styled.div`
   display: flex;
 `;
-export const Newpost = () => {
-  return (
-    <Container>
-      <Box>
-        <Icon img src={vector} />
-
-        <Text>
-          Create <br />
-          new post
-        </Text>
-      </Box>
-    </Container>
-  );
-};

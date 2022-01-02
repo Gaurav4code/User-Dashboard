@@ -27,7 +27,7 @@ export const Recent = () => {
           <Hours> 2 hrs</Hours>
         </Time>
 
-        <img src={chevron} />
+        <Icon src={chevron} />
       </RecentMeet>
       <RecentMeet>
         <Profile />
@@ -37,7 +37,7 @@ export const Recent = () => {
           <Hours> 2 hrs</Hours>
         </Time>
 
-        <img src={chevron} />
+        <Icon src={chevron} />
       </RecentMeet>
       <RecentMeet>
         <Profile />
@@ -47,7 +47,7 @@ export const Recent = () => {
           <Hours> 2 hrs</Hours>
         </Time>
 
-        <img src={chevron} />
+        <Icon img src={chevron} />
       </RecentMeet>
     </Container>
   );
@@ -85,7 +85,6 @@ const RecentMeet = styled.div`
   display: flex;
 
   justify-content: space-between;
-  border: solid red 1px;
 `;
 const Time = styled(Text)`
   font-family: DM Sans;
@@ -95,12 +94,6 @@ const Time = styled(Text)`
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
-  img {
-    h
-    width: 15px;
- 
-    border-radius: 0px;
-  }
 `;
 const Icon = styled.img``;
 const Hours = styled.h5`
@@ -113,7 +106,6 @@ const ProfileContainer = styled.div`
   display: grid;
   width: 134px;
   grid-template-columns: repeat(2, 1fr);
-  border: solid red 1px;
 `;
 
 const ProfileImg = styled.img`
@@ -127,7 +119,7 @@ const ProfileData = styled.div`
   flex-direction: column;
 
   color: white;
-  border: solid 1px yellow;
+
   display: flex;
 `;
 const TextProfile = styled.div`

@@ -6,7 +6,6 @@ import React from "react";
 
 import MenuLink from "../Menu/MenuLink";
 const Container = styled.div`
-  border: solid red 2px;
   width: 100%;
   margin-top: 40px;
 `;

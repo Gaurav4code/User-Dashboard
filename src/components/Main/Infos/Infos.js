@@ -27,7 +27,6 @@ const Explore = styled(Text)`
   margin-left: 50px;
 `;
 const Cards = styled.div`
-  border: solid red 2px;
   display: flex;
   width: 506px;
 `;

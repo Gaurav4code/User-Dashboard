@@ -25,7 +25,7 @@ const Container = styled.div`
 const Text = styled.h1`
   font-size: 0.8rem;
   font-weight: 500;
-  color: ${({ theme }) => theme.textColor};
+  color: #ffffff;
   margin: 0;
 `;
 const ProfileImg = styled.img`
@@ -43,7 +43,7 @@ const ProfileData = styled.div`
 `;
 const Name = styled(Text)`
   vertical-align: top;
-  border: solid red 1px;
+
   font-family: DM Sans;
   font-size: 20px;
   font-style: normal;
@@ -59,7 +59,7 @@ const Designation = styled(Text)`
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  border: solid red 1px;
+
   letter-spacing: 0em;
   text-align: left;
 `;
