@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { Top } from "./Top";
+import { Top } from "./Logo/Top";
 import { Menu } from "./Menu/Menu";
-import { Profile } from "./Profile";
-import { Newpost } from "./Newpost";
+import { Profile } from "./Profile/Profile";
+import { Newpost } from "./Newpost/Newpost";
 
 const Container = styled.div`
   width: 290px;

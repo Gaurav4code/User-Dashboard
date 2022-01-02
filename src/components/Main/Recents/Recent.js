@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import pic from "../Recents/Profile2.png";
 import chevron from "../Recents/chevron-right.svg";
+import clock from "../Recents/Clock.svg";
 export const Profile = () => {
   return (
     <ProfileContainer>
@@ -21,19 +22,30 @@ export const Recent = () => {
       <Heading>Recent Treatments</Heading>
       <RecentMeet>
         <Profile />
-        <Time>2 hrs</Time>
+        <Time>
+          <img src={clock} />
+          <Hours> 2 hrs</Hours>
+        </Time>
 
         <img src={chevron} />
       </RecentMeet>
       <RecentMeet>
         <Profile />
-        <Time>2 hrs</Time>
+
+        <Time>
+          <img src={clock} />
+          <Hours> 2 hrs</Hours>
+        </Time>
 
         <img src={chevron} />
       </RecentMeet>
       <RecentMeet>
         <Profile />
-        <Time>2 hrs</Time>
+
+        <Time>
+          <img src={clock} />
+          <Hours> 2 hrs</Hours>
+        </Time>
 
         <img src={chevron} />
       </RecentMeet>
@@ -52,14 +64,14 @@ const Text = styled.h1`
   height: 26px;
 
   font-family: DM Sans;
-
+  font-weight: 500;
   text-align: left;
 `;
 const Heading = styled(Text)`
   color: red;
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+
   line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
@@ -79,17 +91,22 @@ const Time = styled(Text)`
   font-family: DM Sans;
   font-size: 15px;
   font-style: normal;
-  font-weight: 500;
+  display: flex;
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
   img {
-    height: 8.22580623626709px;
+    h
     width: 15px;
-    left: 783px;
-    top: 446px;
+ 
     border-radius: 0px;
   }
+`;
+const Icon = styled.img``;
+const Hours = styled.h5`
+  margin-top: 0px;
+  color: #c4c4c4;
+  margin-left: 4px;
 `;
 const ProfileContainer = styled.div`
   display: flex;
@@ -124,6 +141,7 @@ const Name = styled(TextProfile)`
   line-height: 16px;
   letter-spacing: 0em;
   text-align: left;
+  color: #c4c4c4;
 `;
 
 const Designation = styled(TextProfile)`

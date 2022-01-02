@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import vector from "../Sidebar/Vector.png";
+import vector from "./Vector.png";
 const Container = styled.div`
   width: 140px;
   height: 64px;

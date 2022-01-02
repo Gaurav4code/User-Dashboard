@@ -1,5 +1,14 @@
 import styled from "styled-components";
-import search from "../Main/Search.png";
+import search from "../Search/Search.png";
+
+export const SearchBar = () => {
+  return (
+    <Container>
+      <StyledInput type="text " placeholder="Search" />
+      <Icon src={search} />
+    </Container>
+  );
+};
 
 const Container = styled.div`
   width: 510px;
@@ -41,12 +50,3 @@ const Icon = styled.img`
   width: 20px;
   margin: 20px 120px;
 `;
-const Nav = () => {
-  return (
-    <Container>
-      <StyledInput type="text " placeholder="Search" />
-      <Icon src={search} />
-    </Container>
-  );
-};
-export default Nav;

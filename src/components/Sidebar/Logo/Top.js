@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import Logo from "../Sidebar/Union.png";
+import Logo from "../Logo/Union.png";
 const Container = styled.div`
   display: flex;
   margin-left: 46px;

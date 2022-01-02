@@ -1,5 +1,19 @@
 import styled from "styled-components";
-import pic from "./Menu/Profile.png";
+import pic from "../Profile/Profile.png";
+
+export const Profile = () => {
+  return (
+    <Container>
+      <ProfileImg src={pic} />
+
+      <ProfileData>
+        <Name>Yaksh</Name>
+        <Designation>Cardiologist</Designation>
+      </ProfileData>
+    </Container>
+  );
+};
+
 const Container = styled.div`
   display: flex;
   display: grid;
@@ -49,15 +63,3 @@ const Designation = styled(Text)`
   letter-spacing: 0em;
   text-align: left;
 `;
-export const Profile = () => {
-  return (
-    <Container>
-      <ProfileImg src={pic} />
-
-      <ProfileData>
-        <Name>Yaksh</Name>
-        <Designation>Cardiologist</Designation>
-      </ProfileData>
-    </Container>
-  );
-};
